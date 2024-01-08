@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@500&display=swap');
+body{
+  margin: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+}
+.Nav{
+  z-index: 1;
+  background: rgb(0, 0, 0);
+  height: 70px;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav ul a{
+  position: relative;
+  text-decoration: none;
+  margin-left: 60px;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5em;
+  font-family: 'Genos', sans-serif;
+  &:nth-child(1){
+    border-bottom: 3px solid rgb(255, 255, 255);
+  }
+}
+.Nav ul a:hover{
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.me{
+  display: flex;
+  width: 100%;
+  z-index: -1;
+  margin-top: -150px;
+  left: 30px;
+  height: auto;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  color: white;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.me .minepic{
+  margin: 100px;
+  width: 310px;
+  height: 340px;
+  box-shadow: 0px 0px 1px 18px rgb(0, 0, 0) , 25px 0px 1px 15px white ,-25px 0px 1px 15px rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-top: 300px;
+  overflow: hidden;
+  animation-name: FromLeft;
+  animation-duration: 2s;
+  
+}
+
+.minepic:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
+  box-shadow: -1px 2px 20px 10px white ;
+}
+.me h1{
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: 'Rubik Doodle Shadow', system-ui;
+  position: relative;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+  animation-name: FromLeft;
+  animation-duration: 2s;
+}
+.me h4{
+  font-size: 1.2rem;
+  font-family: 'Mochiy Pop One', sans-serif;
+  position: relative;
+  top: 60px;
+  margin-left: -265px;
+  overflow: hidden;
+  animation-name: FromLeft;
+  animation-duration: 2s;
+}
+.me p{
+  font-size: 1.2rem;
+  font-family: 'Kanit', sans-serif;
+  position: relative;
+  top: 130px;
+  inline-size: 400px;
+  margin-left: -315px;
+  overflow: hidden;
+  animation-name: FromLeft;
+  animation-duration: 2s;
+
+}
+.me a{
+  position: relative;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 220px;
+  margin-left: -125px;
+  animation-name: FromLeft;
+  animation-duration: 2s;
+
+}
+.me a:hover{
+  box-shadow: 3px 5px 10px 2px white;
+}
+.mycv {
+  position: absolute;
+  height: 70px; 
+  width: 200px;
+  bottom: 350px;
+  right:200px ;
+  animation-name: FromLeft;
+  animation-duration: 2s;
+
+}
+.mycv button{
+  width: 200px;
+  height: 70px;
+  border-radius: 55px;
+  border: 5px solid rgba(0, 0, 0, 0.548);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  transition: 1s;
+}
+.mycv button:hover{
+  transition:1s;
+  border: 3px solid rgb(255, 255, 255);
+  background: black;
+  color: white;
+}
+@keyframes FromLeft {
+  from{transform: translateY(-200%);}
+}
+@keyframes Upexit{
+  to{transform: translateY(-1400%);}
+}
